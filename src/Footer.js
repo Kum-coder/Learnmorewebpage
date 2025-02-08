@@ -3,37 +3,11 @@ import React from "react";
 const Footer = () => {
   return (
     <footer className="bg-blue-600 text-white py-6">
-      <div className="container mx-auto px-4">
-        {/* Upper Section */}
-        <div className="flex flex-col md:flex-row justify-between items-center mb-4">
-          <h1 className="text-xl font-bold mb-4 md:mb-0">
-            LearnMoreTechnology
-          </h1>
-          <ul className="flex space-x-4">
-            <li>
-              <a href="#home" className="hover:text-gray-300">
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="#about" className="hover:text-gray-300">
-                About
-              </a>
-            </li>
-            <li>
-              <a href="#services" className="hover:text-gray-300">
-                Services
-              </a>
-            </li>
-            <li>
-              <a href="#contact" className="hover:text-gray-300">
-                Contact
-              </a>
-            </li>
-          </ul>
-        </div>
+      <div className="container mx-auto px-4 text-center">
+        {/* Brand Name */}
+        <h1 className="text-xl font-bold mb-4">LearnMoreTechnology</h1>
 
-        {/* Social Media Section */}
+        {/* Social Media Links */}
         <div className="flex justify-center space-x-6 mb-4">
           <a
             href="https://facebook.com"
@@ -62,11 +36,9 @@ const Footer = () => {
         </div>
 
         {/* Copyright Section */}
-        <div className="text-center">
-          <p className="text-sm">
-            © {new Date().getFullYear()} LearnMoreTechnology. All rights reserved.
-          </p>
-        </div>
+        <p className="text-sm">
+          © {new Date().getFullYear()} LearnMoreTechnology. All rights reserved.
+        </p>
       </div>
     </footer>
   );
